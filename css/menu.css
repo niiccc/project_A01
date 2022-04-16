@@ -1,0 +1,133 @@
+/*====== Layouting =======*/
+section#menu{
+    padding: 30px;
+}
+
+div#menu-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+div#menu-subtitle{
+    padding-bottom: 40px;
+}
+
+div#menu-variant{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+div#menu-variant li ul{
+    display: inline;
+    padding: 5px;
+}
+
+div#menu-spec{
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+}
+
+/*======= Decoration ======*/
+.small-line{
+    width: 120px;
+    height: 1.5px;
+}
+
+.alg-slf-cnt{
+    align-self: center !important;
+}
+
+.menu-variant-active{
+    color: #cda45e;
+}
+
+/*====== Colouring =======*/
+.cl-menu-primary{
+    color: #aaaaaa;
+}
+
+.cl-menu-secondary{
+    color: #cda45e;
+}
+
+.cl-menu-white{
+    color: white;
+}
+
+.bg-cl-menu-primary{
+    background-color: #1a1814;
+}
+
+.bg-cl-menu-secondary-light{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*====== Font Styling ======*/
+.menu-heading{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.menu-subtitle{
+    font-size: 14px;
+    text-align: center;
+}
+
+.font-fam-playfair{
+    font-family: 'Playfair Display', serif;
+}
+
+.font-fam-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*======= Divider =======*/
+.ml-10px{
+    margin-left: 10px;
+}
+
+/*====== ViewPort =======*/
+@media screen and (max-width: 990px){
+    div#menu-spec{
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 15px;
+    }
+
+    section#menu{
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 500px){
+    section#menu{
+        padding: 15px;
+    }
+}
+
+.bg-photo{
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    background-color: rgba(38, 34, 34, 0.773);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.img-container{
+    width: 80%;
+    height: 80%;
+    border-radius: 90px;
+    background-image: url('./../image/lobster-bisque.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
