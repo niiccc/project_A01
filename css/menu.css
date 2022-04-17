@@ -1,6 +1,6 @@
 /*====== Layouting =======*/
 section#menu{
-    padding: 30px;
+    padding: 40px 70px;
 }
 
 div#menu-title{
@@ -33,7 +33,98 @@ div#menu-spec{
     gap: 15px;
 }
 
+div.menu-spec-container{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    gap: 15px;
+}
+
+div.menu-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-content: center;
+    padding-left: 10px;
+}
+
+div.menu-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
 /*======= Decoration ======*/
+.bg-photo{
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    background-color: rgba(38, 34, 34, 0.773);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.bg-photo-transparent{
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    background-color: rgba(38, 34, 34, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.img-container{
+    width: 80%;
+    height: 80%;
+    border-radius: 90px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pl-1{
+    padding-left: 10px;
+}
+
+.pr-1{
+    padding-right: 10px;
+}
+
+.p-1{
+    padding: 0px 10px;
+}
+
+.fw-700{
+    font-weight: 700;
+}
+
+.z-idx-top{
+    z-index: 10;
+}
+
+.z-idx-btm{
+    z-index: -1;
+}
+
+.pos-relative{
+    position: relative;
+}
+
+.pos-abs{
+    position: absolute;
+}
+
+.dot-divider{
+    width: 100%;
+    height: 2px;
+    border-bottom: dotted 2px white;
+    margin-bottom: 7px;
+}
+
 .small-line{
     width: 120px;
     height: 1.5px;
@@ -43,8 +134,21 @@ div#menu-spec{
     align-self: center !important;
 }
 
+.alg-slf-btm{
+    align-self: flex-end !important;
+}
+
 .menu-variant-active{
     color: #cda45e;
+}
+
+.pointer-crs{
+    cursor: pointer;
+}
+
+ul.pointer-menu-variant:hover{
+    color: #cda45e;
+    transition-duration: 0.3s;
 }
 
 /*====== Colouring =======*/
@@ -56,8 +160,16 @@ div#menu-spec{
     color: #cda45e;
 }
 
+.cl-menu-secondary-light{
+    color: rgba(255, 255, 255, 0.5);
+}
+
 .cl-menu-white{
     color: white;
+}
+
+.bg-cl-black{
+    background-color: rgb(0, 0, 0);
 }
 
 .bg-cl-menu-primary{
@@ -92,7 +204,7 @@ div#menu-spec{
     margin-left: 10px;
 }
 
-/*====== ViewPort =======*/
+/*====== ViewPort for Tablet =======*/
 @media screen and (max-width: 990px){
     div#menu-spec{
         padding-top: 40px;
@@ -102,32 +214,13 @@ div#menu-spec{
     }
 
     section#menu{
-        padding: 40px;
+        padding: 40px 45px;
     }
 }
+
+/*====== ViewPort for Mobile =====*/
 @media screen and (max-width: 500px){
     section#menu{
         padding: 15px;
     }
-}
-
-.bg-photo{
-    width: 90px;
-    height: 90px;
-    border-radius: 90px;
-    background-color: rgba(38, 34, 34, 0.773);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-.img-container{
-    width: 80%;
-    height: 80%;
-    border-radius: 90px;
-    background-image: url('./../image/lobster-bisque.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }

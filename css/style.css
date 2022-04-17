@@ -4,11 +4,117 @@
 @import "viewport.css" all;
 @import "menu.css" all;
 
-*{
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+  margin: 0;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(/image/BG.png);
+  background-size: cover;
+  color: white;
+}
+
+.top-wrapper h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+}
+
+.our {
+  outline-color: #f7b731;
+  margin-right: 15px;
+}
+
+.book {
+  outline-color: #f7b731;
+}
+
+.btn {
+  padding: 12px 24px;
+  margin-top: 5px;
+  display: inline-block;
+  opacity: 0.8;
+  color: #f7b731;
+  border-radius: 20px;
+  outline: solid;
+  transition: all 0.8s;
+}
+
+.btn:hover {
+  background-color: #f7b731;
+  color: white;
+  outline: none;
+}
+
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
+
+.fa {
+  margin-right: 5px;
+  visibility: hidden;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+.header-left {
+  float: left;
+}
+.header-right {
+  float: right;
+  color: white;
+}
+
+.header-right a {
+  line-height: 65px;
+  float: left;
+  padding: 0px 20px;
+  color: white;
+  display: block;
+  transition: all 0.5s;
+}
+
+.header-right a:hover {
+  color: #f7b731;
+}
+
+.resto {
+  color: #f7b731;
 }
