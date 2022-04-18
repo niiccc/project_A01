@@ -118,3 +118,119 @@ header {
 .resto {
   color: #f7b731;
 }
+
+
+*{
+    box-sizing: border-box;
+  } 
+  .cont {
+    background-color: #0c0b09;
+    background-size: cover;
+    width: auto;
+    height: 100%;
+    padding: 0 50px;
+  }
+  .contact-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1px;
+  padding: 20px 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+  }
+  .contack-border {
+  float:left;
+  }
+  .contact-border i {
+  color: #aaaaaa;
+  }
+  .contact-title p {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  color: #cda45e;
+  padding-bottom: 20px;
+  }
+  .icon {
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #cda45e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+  }
+  .icon i {
+  color: white;
+  font-size: 20px;
+  }
+  .info {
+  margin-bottom: 30px;
+  }
+  .contact-info h4 {
+  padding: 0 0 0 60px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  }
+  .info p {
+  padding: 0 0 0 60px;
+  font-size: 14px;
+  color: #bab3a6;
+  }
+  .contact-info {
+  float: left;
+  }
+  .messages {
+  width: 1100px;
+  }
+  .name, .email {
+  width: 34%;
+  }
+  .email {
+    float: right;
+  }
+  .name, .subject, .message {
+  margin-left: 30px;
+  }
+  .subject, .message {
+  width: 68%;
+  }
+  input, textarea {
+  font-size: 14px;
+  background: #0c0b09;
+  border-color: rgb(118, 118, 118);
+  color: white;
+  float: left;
+  margin-bottom: 20px;
+  padding: 8px;
+  }
+  input:active , textarea:active {
+  border-color: #cda45e;
+  }
+  .form-control {
+  display: block;
+  }
+  button {
+  background: #cda45e;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+  margin: 10px 0 40px 0;
+  }
+  button:hover {
+  opacity: 0.9;
+  }
+  .btn1 {
+    text-align: center;
+  }
